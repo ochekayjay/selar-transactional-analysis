@@ -1,7 +1,7 @@
 
 📌 Project Overview
 
- This project demonstrates the practical application of core data engineering tools and concepts by simulating a real-world, high-throughput data environment. The simulation generates data at a rate of 120 records per minute—equivalent to approximately 50 million records per year—using Apache Kafka as the data ingestion layer.
+ This project demonstrates the practical application of core data engineering tools and concepts by simulating a real-world, high-throughput data environment. The simulation generates data at a rate of 120 records per minute, equivalent to approximately 50 million records per year using Apache Kafka as the data ingestion layer.
 
 The data pipeline operates in two stages:
 
