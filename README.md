@@ -1,7 +1,7 @@
 
 📌 Project Overview
 
- aRight here is a simple project that utilizes necessary data-engineering leaning tools by simulating a real-world scenario with data being automatically manufactured at the speed of 120records every minute to match the 50million/year record in practice with kafka. The data fed into the pipeline is in two phases one from the backlog of data from previous years, the other is from currently generated data. Both data is extracted off the central database table used for persisting client data for backend apis, and all cleaning and transforming queries would also go in here. Afterwards the normalised dataset gets fed into the big query data-warehouse which is chained to a dashboard. For the puprose of illustration, i built a simple project which tracks the busiest time of commercial activity per item for each brand onboarded on selar.
+ This is a simple project that utilizes necessary data-engineering leaning tools by simulating a real-world scenario with data being automatically manufactured at the speed of 120 records every minute to match the 50million/year record in practice with kafka. The data fed into the pipeline is in two phases one from the backlog of data from previous years, the other is from currently generated data. Both data is extracted off the central database table used for persisting client data for backend apis, and all cleaning and transforming queries would also go in here. Afterwards the normalised dataset gets fed into the big query data-warehouse which is chained to a dashboard. For the puprose of illustration, i built a simple project which tracks the busiest time of commercial activity per item for each brand onboarded on selar.
 
 🔍 Objectives
 
