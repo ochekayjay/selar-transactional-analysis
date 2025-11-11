@@ -47,6 +47,3 @@ COST ANALYSIS:
 
 
 
-Partitioning: Based on flight date to improve query performance.
-
-About Batch Processing Project
