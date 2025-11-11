@@ -1,7 +1,19 @@
 
 📌 Project Overview
 
- This is a simple project that utilizes necessary data-engineering leaning tools by simulating a real-world scenario with data being automatically manufactured at the speed of 120 records every minute to match the 50million/year record in practice with kafka. The data fed into the pipeline is in two phases one from the backlog of data from previous years, the other is from currently generated data. Both data is extracted off the central database table used for persisting client data for backend apis, and all cleaning and transforming queries would also go in here. Afterwards the normalised dataset gets fed into the big query data-warehouse which is chained to a dashboard. For the puprose of illustration, i built a simple project which tracks the busiest time of commercial activity per item for each brand onboarded on selar.
+ This project demonstrates the practical application of core data engineering tools and concepts by simulating a real-world, high-throughput data environment. The simulation generates data at a rate of 120 records per minute—equivalent to approximately 50 million records per year—using Apache Kafka as the data ingestion layer.
+
+The data pipeline operates in two stages:
+
+Historical Data Load – Ingesting backlog data from previous years.
+
+Real-Time Data Stream – Continuously capturing newly generated records.
+
+Both datasets are sourced from a central database table that stores client information for backend APIs. This stage also includes data cleaning and transformation logic to ensure consistency and quality.
+
+The processed and normalized data is then loaded into Google BigQuery, serving as the project’s data warehouse. From there, it connects to an interactive dashboard for analytics and visualization.
+
+For demonstration purposes, the project focuses on identifying peak commercial activity periods per item across brands onboarded on Selar, highlighting insights into time-based performance trends.
 
 🔍 Objectives
 
