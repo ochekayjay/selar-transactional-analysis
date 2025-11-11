@@ -5,9 +5,9 @@
 
 The data pipeline operates in two stages:
 
-Historical Data Load – Ingesting backlog data from previous years.
+- Historical Data Load – Ingesting backlog data from previous years.
 
-Real-Time Data Stream – Continuously capturing newly generated records.
+- Real-Time Data Stream – Continuously capturing newly generated records.
 
 Both datasets are sourced from a central database table that stores client information for backend APIs. This stage also includes data cleaning and transformation logic to ensure consistency and quality.
 
