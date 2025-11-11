@@ -1,0 +1,7 @@
+version: 2
+sources:
+  - name: main
+    schema: public
+    tables:
+      - name: marketdata
+      - name: selar_oltp_raw_data

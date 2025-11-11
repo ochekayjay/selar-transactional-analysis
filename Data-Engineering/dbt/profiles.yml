@@ -1,0 +1,11 @@
+user_insight:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: postgresdb
+      user: kestra
+      password: k3str4
+      dbname: airflowDb   # <– top-level database
+      schema: STAGING          # <– namespace inside the db
+      port: 5432

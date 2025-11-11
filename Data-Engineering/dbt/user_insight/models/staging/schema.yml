@@ -1,0 +1,34 @@
+
+version: 2
+
+models:
+
+  
+  - name: selar_client_aggregation
+    description: "A starter dbt model"
+    columns:
+      - name: brand
+        data_tests:   
+          - not_null
+
+      - name: nameOfClient
+        data_tests:
+          - not_null
+
+      - name: time
+        data_tests:
+          - not_null
+
+      - name: dayTime
+        data_tests:
+          - not_null
+
+      - name: timeRank
+        data_tests:
+          - not_null
+
+
+      - name: daytimeFrequency
+        data_tests:
+          - not_null
+      
