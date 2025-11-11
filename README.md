@@ -28,6 +28,7 @@ Engineering Flow
     - Time of purchase
     - Nature of Delivery
     - Nature of Pay etc.
+      
 All elements here points to typical Online Transaction Processing (OLTP) databases, meaning a Cloud Sql instance or data repositor of similar nature already exists for storing daily data, meaning a virtual machine instance also exists for data processing.
   To achieve subsidized cost and normalising data-backlogs whilst creating a befitting architecture to processing incoming data, we would be using these tools:
     - Airflow : for task ochestration.
@@ -35,6 +36,8 @@ All elements here points to typical Online Transaction Processing (OLTP) databas
     - DBT : For modularized querying, upon a window-sized dataset on daily intervals.
     - Big Query: For data-warehousing, a sink for your analytic dashboard (looker studio etc)
     - Kafka : For data Simulation, automating data to test-run architecture with similar 50million records/year through put.
+
+    
 Kafka gets powered to feed data into the central OLTP database, simulating a real-world scenario, and a scheduler triggers airflow dags at interval calling all down-stream tasks in the proper lineage for data order and proper aggregation. Store raw data in Google cloud Storage. Normalize and Partition the data by date in bigQuery data warehouse. Load processed data into BigQuery for analysis. Create dbt models to further draw insights in automated fashion from the temporal daily persisted dataset in postgres CLOUD SQL. Create SQL queries and dashboards to generate insights on looker studio. 
 
 COST ANALYSIS:
